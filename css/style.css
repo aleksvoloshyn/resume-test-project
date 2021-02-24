@@ -62,7 +62,7 @@ body {
 }
 
 .contacts-link-type {
-  font-family: 'Montserrat - Bold';
+  font-family: "Montserrat - Bold";
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.42px;
@@ -274,4 +274,41 @@ body {
   font-style: normal;
   letter-spacing: normal;
   line-height: 24px;
+}
+
+/* применять праило, когда viewport от 500px  высше*/
+@media (min-width: 500px) {
+  body {
+    background-color: darkorchid;
+  }
+}
+
+/* применять праило, когда viewport от 0px до 80px */
+@media (max-width: 80px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* применять праило, когда viewport от 100px до 200px */
+@media (min-width: 100px) and (max-width: 200px) {
+  body {
+    background-color: salmon;
+  }
+}
+
+/* or  или */
+/* применять праило, когда viewport до 767px или от1200px */
+@media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: slateblue;
+  }
+}
+
+/* types */
+/* screen  -  описывает устройства с физическим экраном    */
+@media screen and (min-width: 1300px) {
+  body {
+    color: red;
+  }
 }
